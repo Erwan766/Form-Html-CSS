@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" type="text/css" href="css/reset.css">
+    <link rel ="stylesheet" type="text/css" href="css/style.css"> 
+    <title>Formulaire Scolar Fab</title>
+</head>
+<body>
+    <h1>Scolar Fab</h1><br>
+    <h2>Ancienement Aden Formations</h2>
+
+    <br><br>
+    <div id="formulaire">
+
+    <form action="post" action="traitement.php">
+
+        <fieldset>
+
+            <legend>Identité</legend><br>
+            <label form="nom" >Nom*</label>
+            <input type="text" name="nom" id="nom" placeholder="Entrez votre Nom" maxlength="35" size="30" required>
+            <br><br>
+            <label form="prenom">Prénom*</label>
+            <input type="text" name="prenom" id="prenom" placeholder="Entrez votre Prénom" maxlength="35" size="30" required>
+            <br><br>
+            <label form="mail">adresse mail*</label>
+            <input type="text" name="email" id="mail" placeholder="entrez votre adresse mail" required maxlength="35" size="30">
+            <br><br>
+            <label form="tel">Votre numéro de téléphone</label>
+            <input type="tel" name="tel" id="tel" placeholder="Entrez votre numéro de tel">
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Adresse Postale</legend>
+            <br>
+            <label form="adresse">Adresse*</label>
+                <input type="text" name="adresse" id="adresse" placeholder="Entrez votre adresse" maxlength="50" size="50" required>
+            <br><br>
+            <label form="adresse">Adresse Complémentaire</label>
+                <input type="text" name="complement" id="complement" placeholder="Ajoutez des informations" maxlength="50" size="50">
+            <br><br>
+            <label form="adresse">Code Postale*</label>
+                <input type="text" name="code" id="code" placeholder="73152" maxlength="5" size="2" required>
+            <br><br>
+            <label form="adresse">Ville*</label>
+                <input type="text" name="ville" id="ville" placeholder="Ville" maxlength="30" size="30">
+            <br><br>
+            <label>Vos commentaires</label><br>
+                <textarea name="commentaires" id="commentaires" placeholder="Entrez votre commentaire" cols="60" rows="10" maxlength="300"></textarea>
+            <br><br>
+            </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Secteur d'activité</legend><br>
+            <label for="secteur">Choissisez un secteur d'activité</label><br><br>
+            <select name="secteur" id="secteur" value="null" single>
+            <!-- <option>Choissisez un secteur d'activité</option> -->
+                <option value="transport" selected>Transport</option>
+                <option value="informatique">informatique et réseaux</option>
+                <option value="banque">Banque et Assurance</option>
+                <option value="commerce">Commerce et management</option>
+                <option value="langue">Langues</option>      
+            </select>
+            <br><br>
+        </fieldset>
+        
+        <br>
+
+        <label form="lu">Je confirme avoir pris connaissance de la politique de confidentialité*</label>
+        <input type="checkbox" name="lu" id="lu" required>
+        <br><br>
+        <label form="news">Je souhaite recevoir la newsletter</label>
+        <input type="checkbox" name="news" id="news" checked>
+        <br><br>
+
+        <center>
+        <input type="submit" value="Envoyer">
+        </center>
+
+
+    </form>
+    </div>
+
+</body>
+</html>
